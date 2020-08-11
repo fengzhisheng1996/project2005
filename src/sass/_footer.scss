@@ -1,0 +1,126 @@
+@charset "utf-8"; //设置字符编码
+#footer {
+    overflow: hidden;
+    min-height: 180px;
+    margin-top: 50px;
+    padding: 50px 0 24px;
+    background-image: url(https://s10.mogucdn.com/mlcdn/c45406/181031_40flk9d5hkkjf44246248clfl77f1_1440x500.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mgj_copyright {
+    color: #fff;
+    font-size: 12px;
+}
+
+.mgj_footer_icon {
+    margin: 0 auto 49px;
+    width: 140px;
+}
+
+.mgj_footer_helper {
+    width: 100%;
+    margin-left: 40px;
+    dl {
+        width: 25%;
+    }
+    dt {
+        font-size: 14px;
+        margin-bottom: 23px;
+        line-height: 20px;
+        overflow: hidden;
+    }
+    dd {
+        p {
+            font-size: 12px;
+            width: 80px;
+            height: 17px;
+            line-height: 17px;
+            font-weight: 300;
+            margin-bottom: 12px;
+        }
+        p:last-child {
+            margin-bottom: 0px;
+        }
+        a {
+            color: #fff;
+        }
+        p:hover {
+            a {
+                color: orange;
+            }
+        }
+    }
+    .mgj_footer_helper_item_last {
+        position: relative;
+        .mgj_footer_helper_quoer_code {
+            position: absolute;
+            display: none;
+            height: 70px;
+            width: 70px;
+            top: -14px;
+            left: -77px;
+            overflow: hidden;
+        }
+    }
+    .mgj_footer_helper_item_last:hover {
+        .mgj_footer_helper_quoer_code {
+            display: block;
+        }
+    }
+    .mgj_footer_helper_title_border {
+        width: 30px;
+        height: 1px;
+        background: #fff;
+        margin-top: 4px;
+    }
+}
+
+.mgj_footer_mgjinfo {
+    min-height: 20px;
+    margin-top: 50px;
+    overflow: hidden;
+    font-weight: 300;
+    text-align: center;
+    a {
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+        color: #fff;
+    }
+    b {
+        margin: 0 28px;
+    }
+}
+
+.mgj_footer_hostname {
+    font-weight: 100;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    position: relative;
+    span {
+        padding: 0 26px;
+    }
+    b {
+        flex: 1;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        font-weight: 100;
+        transform: translate(0, 50%);
+    }
+}
+
+.mgj_footer_copyright {
+    line-height: 27px;
+    margin-top: 10px;
+    font-weight: 300;
+    text-align: center;
+    a {
+        color: #fff;
+    }
+    b {
+        margin: 0 5px;
+        font-weight: 400;
+    }
+}

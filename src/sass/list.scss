@@ -1,0 +1,247 @@
+@charset "utf-8"; //设置字符编码
+@import 'public';
+
+/*!右侧导航栏*/
+
+@import 'rightbar';
+
+/*!头部*/
+
+$height1:108px;
+$line_height1:36px;
+@import 'header';
+
+/*!主体*/
+
+#condition_box {
+    border: 1px solid #e5e5e5;
+}
+
+.sp_top_nav {
+    background-color: #fafafa;
+    padding-left: 15px;
+    position: relative;
+}
+
+.nav_list {
+    height: 38px;
+    font-size: 0;
+    overflow: hidden;
+    li {
+        width: 65px;
+        cursor: pointer;
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        white-space: nowrap;
+    }
+    a {
+        display: block;
+        width: 100%;
+        height: 38px;
+        line-height: 38px;
+        overflow: hidden;
+        font-size: 16px;
+    }
+    .on {
+        background-color: #fff;
+        height: 39px;
+        border-left: 1px solid #e5e5e5;
+        border-right: 1px solid #e5e5e5;
+        a {
+            border-top: 2px solid #f46;
+        }
+    }
+}
+
+.wall_nav_box {
+    /*!图墙导航:排序、价格筛选等*/
+    border: 1px solid #e5e5e5;
+    height: 24px;
+    padding: 7px 0;
+    line-height: 24px;
+    overflow: hidden;
+    box-sizing: content-box;
+    .sort_container {
+        a {
+            padding: 0 20px;
+            text-align: center;
+            border-right: 1px solid #e5e5e5;
+            font-size: 12px;
+        }
+        .item_on {
+            color: #f36;
+            font-weight: 700;
+        }
+    }
+    .price_input {
+        margin-left: 20px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: top;
+        .txt {
+            width: 46px;
+            height: 22px;
+            line-height: 22px;
+            display: inline-block;
+            border: 1px solid #dadada;
+            .rmb {
+                color: #999;
+            }
+            input {
+                border: none;
+                width: 34px;
+                height: 22px;
+                line-height: 22px;
+            }
+        }
+        .divid {
+            margin: 0 5px;
+        }
+        .sbt {
+            background: 0 0;
+            border: 1px solid #dadada;
+            width: 45px;
+            height: 22px;
+            line-height: 22px;
+            display: inline-block;
+            text-align: center;
+            margin-left: 10px;
+        }
+    }
+    .price_choice {
+        position: relative;
+        display: inline-block;
+        margin-left: 10px;
+        border-left: 1px solid #e5e5e5;
+        height: 24px;
+        .price_range_btn {
+            width: 64px;
+            text-align: center;
+            height: 22px;
+            line-height: 22px;
+            display: inline-block;
+            border: 1px solid #E5E5E5;
+            border-left: none;
+            padding: 0 5px;
+        }
+    }
+}
+
+.wall_goods_box {
+    /*!图墙list部分*/
+    overflow: hidden;
+}
+
+.goods_list_mod {
+    /*!图墙list部分*/
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .goods_item {
+        height: 375px;
+        width: 218px;
+        border: 1px solid #f2f2f2;
+        background: #fff;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 25px;
+        .likeLink {
+            display: none;
+            height: 24px;
+            width: 100%;
+            color: #fff;
+            line-height: 24px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 14px;
+            // background-color: #f57;
+            background-color: rgba(255, 85, 119, .7);
+            position: absolute;
+            top: 269px;
+            left: 0;
+            z-index: 5;
+        }
+        .pagani_log_link {
+            display: block;
+            width: 220px;
+            height: 294px;
+            overflow: hidden;
+        }
+        .goods_info_container {
+            display: block;
+            padding: 0 8px;
+            overflow: hidden;
+        }
+        .title {
+            height: 40px;
+            margin-bottom: 3px;
+            line-height: 20px;
+            position: relative;
+            margin-top: 6px;
+            font-size: 14px;
+            color: #666;
+            width: 100%;
+            overflow: hidden;
+        }
+        .goods_info {
+            height: 25px;
+            line-height: 25px;
+            overflow: hidden;
+            // color: #333;
+            width: 100%;
+        }
+        .price_info {
+            font-weight: 700;
+            font-size: 16px;
+        }
+        .org_price {
+            font-size: 14px;
+            color: #666;
+            margin: 3px 0 0 8px;
+            line-height: 20px;
+        }
+        .fav_num {
+            font-size: 12px;
+            color: #999;
+            img {
+                height: 15px;
+                width: 16px;
+                vertical-align: -2px;
+                margin-right: 4px;
+            }
+        }
+    }
+    .goods_item:hover {
+        border-color: #f57;
+        .likeLink {
+            display: block;
+        }
+    }
+}
+
+
+/*!尾部*/
+
+@import 'footer';
+// .list ul {
+//     width: 1200px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     padding: 10px 0;
+//     justify-content: space-evenly;
+//     align-content: space-between;
+// }
+// .list li {
+//     width: 310px;
+//     margin-bottom: 10px;
+//     border: 1px solid red;
+// }
+// .list li img {
+//     width: 310px;
+// }
+// .list p span {
+//     display: block;
+//     margin-bottom: 10px;
+// }

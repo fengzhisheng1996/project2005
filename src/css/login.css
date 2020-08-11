@@ -1,0 +1,429 @@
+@charset "UTF-8";
+
+/* 重置样式 */
+
+body {
+    color: #333;
+    font: 12px/1.6 tahoma, arial, sans-serif;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+
+/* 通用样式 */
+
+.wrapper {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.clearfix:after {
+    /*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* logo */
+
+.logo_wrap {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo_wrap a {
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    width: 130px;
+    height: 57px;
+    background-size: contain;
+}
+
+.logo_wrap a img {
+    position: absolute;
+    top: -28px;
+    width: 100%;
+}
+
+.logo_wrap .login_logo_tip {
+    display: inline-block;
+    width: 861px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 11px;
+    color: #666;
+    margin-left: 20px;
+    background-color: #ffefef;
+    border: 1px solid #ffc0cc;
+    text-align: center;
+    position: absolute;
+    top: 12px;
+}
+
+
+/* 主体 */
+
+.content {
+    width: 100%;
+    background: url(https://s17.mogucdn.com/p2/170105/upload_541i9di2b3icf9j13f24e0bg7b1i6_1920x600.png) center center no-repeat;
+}
+
+.lg_banner {
+    width: 62.5%;
+    height: 600px;
+}
+
+.lg_banner a {
+    display: block;
+    width: 700px;
+    margin-left: 56px;
+    margin-top: 80px;
+    height: 440px;
+    overflow: hidden;
+}
+
+.lg_main_box {
+    width: 356px;
+    padding: 0 0 30px 44px;
+    background-color: #fff;
+    margin-top: 60px;
+    opacity: 0.9;
+    box-shadow: 5px -5px 20px 0 rgba(81, 79, 79, 0.05), -5px 5px 20px 0 rgba(81, 79, 79, 0.05);
+    border-radius: 10px;
+    position: relative;
+}
+
+.login_mod_tab {
+    margin-left: 24px;
+    margin-bottom: 24px;
+    padding-top: 24px;
+}
+
+.login_mod_tab .tab_on {
+    height: 22px;
+    border-bottom: 3px solid #f46;
+}
+
+.login_mod_tab div {
+    width: 50%;
+    height: 22px;
+    user-select: none;
+}
+
+.login_mod_tab a {
+    width: 64px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.login_mod_tab .phone_login a {
+    margin-right: 60px;
+    width: 80px;
+}
+
+.qrcode_wrapper {
+    /* display: none; */
+    position: relative;
+    width: 100%;
+    margin-left: 64px;
+}
+
+.click-download,
+.scan-login {
+    width: 180px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.scan-login {
+    margin-bottom: 12px;
+    color: #666;
+}
+
+#qrcodeimg {
+    position: relative;
+    height: 180px;
+    width: 180px;
+    font-size: 14px;
+    line-height: 180px;
+}
+
+#qrcodeimg img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.click-download {
+    display: block;
+    margin-top: 12px;
+    height: 30px;
+    font-family: Microsoft YaHei;
+    color: #f46;
+    border: 1px solid #f46;
+    border-radius: 16px;
+    line-height: 30px;
+}
+
+.formbox {
+    display: none;
+}
+
+.error_tip {
+    display: none;
+    width: 310px;
+    height: 22px;
+    line-height: 20px;
+    color: #f46;
+    padding-left: 40px;
+    margin-bottom: 9px;
+    border-radius: 12px;
+    background: url(https://s10.mogucdn.com/pic/140408/o613k_kqzfunswozbg2s2ugfjeg5sckzsew_16x16.png) 12px no-repeat #fffff8;
+    border: 1px solid #ffc98e;
+    box-sizing: border-box;
+}
+
+.lg_form {
+    position: relative;
+}
+
+.mb {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+/* .eb_mod_box {
+    display: none;
+} */
+
+.ui_input {
+    width: 310px;
+    height: 44px;
+    border-radius: 22px;
+    box-sizing: border-box;
+    padding: 0 18px;
+    border-color: #CFCFCF;
+    background: none!important;
+    border: 1px solid #ccc;
+}
+
+.country_select {
+    display: none;
+    float: left;
+    width: 110px;
+    height: 40px;
+    margin-right: 10px;
+    line-height: 1.5;
+    border: 1px solid #c4c4c4;
+    border-radius: 0;
+    color: #333;
+    font-size: 14px;
+    padding: 4px 35px 4px 16px;
+    background: url(https://s10.mogucdn.com/p2/161223/upload_52ff95279ih8leahhhl4l91l5729f_41x39.png) 100% no-repeat #fff;
+    outline: 0;
+    background-color: #ffedeb;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.lg_getcode {
+    position: relative;
+}
+
+.get_tel_code {
+    position: absolute;
+    color: #f46;
+    height: 20px;
+    line-height: 20px;
+    right: 64px;
+    top: 12px;
+}
+
+.lg_login {
+    margin-top: 15px;
+}
+
+.lg_login .sub {
+    display: block;
+    float: left;
+    border: none;
+    width: 310px;
+    height: 44px;
+    line-height: 44px;
+    background: #f46;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.lg_reg {
+    padding-top: 10px;
+    padding-right: 44px;
+    text-align: right;
+    height: 20px;
+}
+
+.lg_reg a {
+    text-decoration: underline;
+    color: #959595;
+}
+
+.switch_account_login,
+.switch_phone_login {
+    width: 84px;
+    height: 20px;
+    margin-left: 114px;
+    margin-top: 38px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    user-select: none;
+}
+
+.switch_phone_login {
+    width: 70px;
+    margin-left: 118px;
+    height: 20px;
+    margin-top: 8px;
+}
+
+.third_login {
+    width: 400px;
+    height: 18px;
+    margin-top: 6px;
+    padding: 20px 0;
+    background: #fff;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.third_login_title {
+    margin-left: 32px;
+}
+
+.weixin_login {
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+.weixin_login img,
+.qq_login img {
+    width: 22px;
+    height: 22px;
+    margin-top: -2px;
+}
+
+.weixin_text,
+.qq_text {
+    margin-left: 6px;
+}
+
+.qq_login {
+    margin-left: 32px;
+    cursor: pointer;
+}
+
+
+/* 尾部 */
+
+#footer {
+    overflow: hidden;
+    min-height: 180px;
+    margin-top: 50px;
+    padding: 50px 0 24px;
+    /* background-image: url(https://s10.mogucdn.com/mlcdn/c45406/181031_40flk9d5hkkjf44246248clfl77f1_1440x500.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.mgj_copyright {
+    /* color: #fff; */
+    font-size: 12px;
+}
+
+.mgj_footer_mgjinfo {
+    min-height: 20px;
+    margin-top: 50px;
+    overflow: hidden;
+    font-weight: 300;
+    text-align: center;
+}
+
+.mgj_footer_mgjinfo a {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    /* color: #333; */
+}
+
+.mgj_footer_mgjinfo b {
+    color: #666;
+    margin: 0 28px;
+    font-weight: 300;
+}
+
+.mgj_footer_hostname {
+    font-weight: 100;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    position: relative;
+}
+
+.mgj_footer_hostname span {
+    padding: 0 26px;
+}
+
+.mgj_footer_hostname b {
+    flex: 1;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    font-weight: 100;
+    transform: translate(0, 50%);
+}
+
+.mgj_footer_copyright {
+    line-height: 27px;
+    margin-top: 10px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/* .mgj_footer_copyright a {
+    color: #333;
+} */
+
+.mgj_footer_copyright b {
+    margin: 0 5px;
+    font-weight: 400;
+}

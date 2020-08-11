@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/registry.css">
+</head>
+
+<body>
+    <form action="http://localhost/js2005/login_registry/php/registry.php" method="POST">
+        <fieldset>
+            <p>
+                <label for="">用&nbsp;&nbsp;户&nbsp;&nbsp;名</label>
+                <input type="text" class="username" name="username" placeholder="您的账户名和登录名">
+                <span></span><em>√</em>
+            </p>
+            <p>
+                <label for="">设&nbsp;置&nbsp;密&nbsp;码</label>
+                <input type="password" class="password" name="password" placeholder="建议至少使用两种字符">
+                <span></span><em>√</em>
+            </p>
+            <p>
+                <label for="">确&nbsp;认&nbsp;密&nbsp;码</label>
+                <input type="password" class="password" placeholder="请再次输入密码">
+                <span></span><em>√</em>
+            </p>
+            <p>
+                <label for="">中国&nbsp;&nbsp;086</label>
+                <input type="text" class="tel" name="tel" placeholder="建议使用常用手机">
+                <span></span><em>√</em>
+            </p>
+            <p>
+                <label for="">电&nbsp;子&nbsp;邮&nbsp;箱</label>
+                <input type="text" class="email" name="email" placeholder="建议使用常用邮箱">
+                <span></span><em>√</em>
+            </p>
+            <div class="yz">
+                <label for="">验&nbsp;&nbsp;证&nbsp;&nbsp;码</label>
+                <input type="text" class="text" placeholder="请输入验证码">
+                <div>U4Zf</div>
+                <span></span><em>√</em>
+            </div>
+            <div class="btn"><input type="submit" value="立即注册" name="submit"></div>
+        </fieldset>
+    </form>
+    <script src="../script/js/public.js"></script>
+    <script src="../script/js/ajax.js"></script>
+    <script src="../script/js/sha1.js"></script>
+    <script src="../script/js/registry.js"></script>
+</body>
+
+</html>

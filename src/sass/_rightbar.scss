@@ -1,0 +1,105 @@
+@charset "utf-8"; //设置字符编码
+.mgj_rightbar {
+    /*!右侧导航栏*/
+    width: 30px;
+    height: 100%;
+    font-size: 12px;
+    color: #fff;
+    background: #202020;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 8000;
+    #mgj_rightbar_blank_div {
+        height: 10%;
+        width: 30px;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .mgj_my_home,
+    .mgj_my_coupon,
+    .mgj_my_wallet,
+    .mgj_my_custom,
+    .mgj_my_seller {
+        position: relative;
+        padding: 10px 4px 0;
+        text-align: center;
+        a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            line-height: 15px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
+        }
+    }
+    .mgj_my_home:hover,
+    .mgj_my_coupon:hover,
+    .mgj_my_wallet:hover,
+    .mgj_my_custom:hover,
+    .mgj_my_seller:hover {
+        background-color: #FF4466;
+    }
+    .ext_mode_wrap {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: -103px;
+        .ext_mode {
+            width: 79px;
+            height: 63px;
+            border-radius: 2px 0 0 2px;
+            background-color: #494949;
+            padding: 10px 0 10px 24px;
+            box-sizing: content-box;
+            a {
+                line-height: 20px;
+                border-bottom: 0;
+                height: 20px;
+                padding-bottom: 0;
+                text-align: left;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+        .toolbar_bubble {
+            display: block;
+            width: 0px;
+            height: 0px;
+            border: 5px solid transparent;
+            border-left-color: #494949;
+            position: absolute;
+            right: -10px;
+            top: 30%;
+        }
+    }
+    .mgj_my_custom:hover,
+    .mgj_my_seller:hover {
+        .ext_mode_wrap {
+            display: block;
+        }
+    }
+    .sideBottom {
+        /*!回到顶部*/
+        position: absolute;
+        bottom: 10px;
+        width: 30px;
+        cursor: pointer;
+        a {
+            border-top: 1px solid rgba(221, 221, 221, 0.6);
+            padding-top: 4px;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        i {
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-image: url(https://s10.mogucdn.com/p2/161011/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png);
+            background-repeat: no-repeat;
+            background-position: -270px -279px;
+        }
+    }
+}
