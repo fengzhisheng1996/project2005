@@ -1,6 +1,7 @@
 @charset "utf-8"; //设置字符编码
 #header {
     /*!头部*/
+    height: 150px;
     position: relative;
 }
 
@@ -161,8 +162,18 @@
     }
 }
 
+.header_wrap_box {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 99;
+    background-color: #fff;
+}
+
 .header_wrap {
     /*!头部目录、搜索*/
+    // transform: rotateX(-50%);
     .logo img {
         width: 130px;
         height: 100px;
@@ -188,15 +199,15 @@
     }
     .header_content_category {
         width: 1120px;
-        position: absolute;
+        min-height: 160px;
+        margin-top: -20px;
+        margin-left: -200px;
         background: #fff;
-        z-index: 9999;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, .05);
         border: 1px solid #E5E5E5;
         border-radius: 2px;
-        margin-top: -20px;
-        min-height: 160px;
-        margin-left: -200px;
+        position: absolute;
+        z-index: 9999;
         display: none;
         span {
             display: block;
@@ -296,6 +307,7 @@
     .top_nav_tip {
         display: none;
         position: absolute;
+        top: 100%;
         left: 0;
         width: 492px;
         z-index: 999;
@@ -303,6 +315,37 @@
         background-color: #fff;
         border: 1px solid #E5E5E5;
         overflow: hidden;
+        li {
+            margin: 0 15px;
+            overflow: hidden;
+        }
+        .entry_item {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            border-bottom: 1px dashed #d8d8d8;
+            padding: 15px 0;
+            height: 36px;
+            .item_left {
+                width: 36px;
+                height: 36px;
+                margin-right: 10px;
+                position: relative;
+            }
+            .item_center {
+                flex: 1;
+            }
+            .title {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .item-desc {
+                height: 17px;
+                padding: 2px 0;
+                line-height: 13px;
+                vertical-align: middle;
+            }
+        }
     }
     .header_nav_list {
         margin-top: 27px;
@@ -333,6 +376,7 @@
     }
     .header_download_center {
         margin-left: 10px;
+        cursor: pointer;
         position: relative;
         i {
             margin-left: 8px;
@@ -340,18 +384,78 @@
         }
         .download_app_code {
             display: none;
+            position: absolute;
+            left: -60px;
+            width: 181px;
+            height: 200px;
+            margin-top: 4px;
+            z-index: 9999;
+            img {
+                position: absolute;
+                right: 2px;
+                top: 0;
+            }
         }
+    }
+    .header_download_center:hover .download_app_code {
+        display: block;
     }
     .header_user_info {
         margin-left: 30px;
         line-height: 40px;
         font-size: 14px;
-        a img {
+        .header_login img {
             width: 30px;
             height: 30px;
             margin-right: 6px;
             border: 0;
             vertical-align: middle;
+        }
+    }
+    .header_user_info_login {
+        display: none;
+        margin-left: 30px;
+        line-height: 40px;
+        font-size: 14px;
+        .header_user_avatar {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 6px;
+        }
+        .header_user_menu {
+            position: relative;
+        }
+        .user_meta {
+            font-size: 14px;
+        }
+        .name {
+            max-width: 70px;
+            vertical-align: middle;
+            text-align: right;
+        }
+        .icon_deltail {
+            width: 6px;
+            height: 6px;
+            margin-left: 2px;
+            background-image: url(https://s10.mogucdn.com/mlcdn/c45406/181017_06jg91deiaa716aldl1j3ceg4f6bb_16x10.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .ext_mode {
+            display: none;
+            width: 112px;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #E5E5E5;
+            border-radius: 2px;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, .05);
+            position: absolute;
+            top: 100%;
+            right: 0;
+            z-index: 999999;
         }
     }
 }

@@ -60,18 +60,31 @@
         overflow: hidden;
     }
     .mslide_banners {
-        width: 100%;
+        width: max-content;
         margin: 0 auto;
         height: 520px;
         padding-left: 20px;
         padding-right: 20px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
     }
     .mslide_banner {
-        width: 100%;
+        width: 630px;
         margin: 0 auto;
         height: 520px;
         padding-top: 20px;
+        // position: absolute;
+        // top: 0;
+        // left: 630px;
+        z-index: 0;
     }
+    // .mslide_banner:first-child {
+    //     left: 0px;
+    // }
+    // .mslide_banner_show {
+    //     z-index: 100;
+    // }
     .mslide_banner_item {
         width: 182px;
         height: 233px;
@@ -131,6 +144,9 @@
             height: 6px;
             padding: 0;
             background: #D8D8D8;
+        }
+        .dot_default_show {
+            background: #666;
         }
     }
 }

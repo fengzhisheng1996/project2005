@@ -119,83 +119,21 @@ input {
     position: relative;
 }
 
-.login_mod_tab {
-    margin-left: 24px;
-    margin-bottom: 24px;
-    padding-top: 24px;
-}
 
-.login_mod_tab .tab_on {
-    height: 22px;
-    border-bottom: 3px solid #f46;
-}
-
-.login_mod_tab div {
-    width: 50%;
-    height: 22px;
-    user-select: none;
-}
-
-.login_mod_tab a {
-    width: 64px;
-    height: 22px;
-    line-height: 22px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.login_mod_tab .phone_login a {
-    margin-right: 60px;
-    width: 80px;
-}
-
-.qrcode_wrapper {
-    /* display: none; */
-    position: relative;
-    width: 100%;
-    margin-left: 64px;
-}
-
-.click_download,
-.scan_login {
-    width: 180px;
-    font-size: 14px;
-    text-align: center;
-}
-
-.scan_login {
-    margin-bottom: 12px;
-    color: #666;
-}
-
-#qrcodeimg {
-    position: relative;
-    height: 180px;
-    width: 180px;
-    font-size: 14px;
-    line-height: 180px;
-}
-
-#qrcodeimg img {
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-}
-
-.click-download {
-    display: block;
-    margin-top: 12px;
-    height: 30px;
-    font-family: Microsoft YaHei;
-    color: #f46;
-    border: 1px solid #f46;
-    border-radius: 16px;
-    line-height: 30px;
-}
-
-.formbox {
+/* .formbox {
     display: none;
+} */
+
+
+/* 注册 start */
+
+.formbox h4 {
+    width: 356px;
+    font-size: 22px;
+    color: #f00;
+    padding: 10px 0px;
+    margin: 0px;
+    text-align: center;
 }
 
 .error_tip {
@@ -218,13 +156,8 @@ input {
 
 .mb {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
-
-
-/* .eb_mod_box {
-    display: none;
-} */
 
 .ui_input {
     width: 310px;
@@ -237,51 +170,40 @@ input {
     border: 1px solid #ccc;
 }
 
-
-/* 无密码 手机号 start */
-
-.country_select {
-    display: none;
-    float: left;
-    width: 110px;
-    height: 40px;
-    margin-right: 10px;
-    line-height: 1.5;
-    border: 1px solid #c4c4c4;
-    border-radius: 0;
-    color: #333;
-    font-size: 14px;
-    padding: 4px 35px 4px 16px;
-    background: url(https://s10.mogucdn.com/p2/161223/upload_52ff95279ih8leahhhl4l91l5729f_41x39.png) 100% no-repeat #fff;
-    outline: 0;
-    background-color: #ffedeb;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-
-/* 获取动态密码 */
-
-.lg_getcode {
+.lo_mod_box .item {
     position: relative;
 }
 
-.get_tel_code {
+.lo_mod_box em {
+    display: none;
+    float: right;
+    margin-right: 6px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/180417_25kbfg1c3hdbd120394ji4b11bk2k_36x36.png) no-repeat;
+    background-size: cover;
+}
+
+.lo_mod_box span {
+    /* display: none; */
+    width: 100%;
+    height: 16px;
+    font-size: 10px;
+    color: #999;
+    padding-left: 22px;
     position: absolute;
-    color: #f46;
-    height: 20px;
-    line-height: 20px;
-    right: 64px;
-    top: 12px;
+    left: 0px;
+    top: 100%;
 }
 
 
 /* 登录按钮 */
 
-.lg_login {
+.rg_btn {
     margin-top: 15px;
 }
 
-.lg_login .sub {
+.rg_btn .sub {
     display: block;
     float: left;
     border: none;
@@ -292,85 +214,6 @@ input {
     border-radius: 25px;
     cursor: pointer;
     color: #fff;
-}
-
-
-/* 忘记密码 */
-
-.lg_reg {
-    padding-top: 10px;
-    padding-right: 44px;
-    text-align: right;
-    height: 20px;
-    cursor: pointer;
-}
-
-
-/* 账号密码登录、手机号登录 */
-
-.switch_account_login,
-.switch_phone_login,
-.switch_registry {
-    width: 84px;
-    height: 20px;
-    margin-left: 114px;
-    margin-top: 38px;
-    font-size: 14px;
-    color: #333;
-    border-bottom: 1px solid #333;
-    cursor: pointer;
-    user-select: none;
-}
-
-
-/* 账号密码登录 */
-
-.switch_phone_login {
-    width: 70px;
-    margin-left: 118px;
-    margin-top: 8px;
-}
-
-.switch_registry {
-    width: 56px;
-    margin-left: 125px;
-    margin-top: 8px;
-}
-
-.third_login {
-    width: 400px;
-    height: 18px;
-    margin-top: 6px;
-    padding: 20px 0;
-    background: #fff;
-    opacity: 0.9;
-    border-radius: 10px;
-}
-
-.third_login_title {
-    margin-left: 32px;
-}
-
-.weixin_login {
-    margin-left: 18px;
-    cursor: pointer;
-}
-
-.weixin_login img,
-.qq_login img {
-    width: 22px;
-    height: 22px;
-    margin-top: -2px;
-}
-
-.weixin_text,
-.qq_text {
-    margin-left: 6px;
-}
-
-.qq_login {
-    margin-left: 32px;
-    cursor: pointer;
 }
 
 

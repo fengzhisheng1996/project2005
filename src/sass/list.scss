@@ -69,6 +69,12 @@ $line_height1:36px;
             border-right: 1px solid #e5e5e5;
             font-size: 12px;
         }
+        a:last-child {
+            background: url(../img/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png) no-repeat 45px -470px;
+        }
+        a:nth-last-of-type(2) {
+            background: url(../img/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png) no-repeat 45px -502px;
+        }
         .item_on {
             color: #f36;
             font-weight: 700;
@@ -90,9 +96,10 @@ $line_height1:36px;
             }
             input {
                 border: none;
-                width: 34px;
-                height: 22px;
+                width: 32px;
+                height: 20px;
                 line-height: 22px;
+                margin: 0px;
             }
         }
         .divid {

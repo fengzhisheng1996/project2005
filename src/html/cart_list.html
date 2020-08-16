@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>购物车列表展示</title>
     <link rel="stylesheet" href="../css/cart_list.css">
+    <script src="../script/require.js" defer async="true" data-main="../script/main.js" id="currentpage" targetpage="cartmodule" charset="utf8"></script>
 </head>
 
 <body>
@@ -72,11 +73,11 @@
         <!-- 头部导航 -->
         <div class="header_top wrapper clearfix">
             <div class="right">
-                <a href="#" class="header_nav_home inline_block">
+                <a href="index.html" class="header_nav_home inline_block">
                     <i></i> 首页
                 </a>
                 |
-                <a href="#" class="header_nav_market inline_block">
+                <a href="index.html" class="header_nav_market inline_block">
                     <i></i> 商城
                 </a>
                 |
@@ -371,9 +372,23 @@
                         </div>
                     </div>
                     <div class="header_user_info inline_block right">
-                        <a href="javascript:;" class="header_login">
+                        <a href="login.html" class="header_login">
                             <img src="../img/181016_143l3ehl4ebad6c2326gjk6d4h41g_48x48.png" alt=""> 登录
                         </a>
+                    </div>
+                    <div class="header_user_info_login inline_block right">
+                        <img src="https://s5.mogucdn.com/p2/170119/upload_7817i12j1g5a4ebbldb6b346hj464_100x100.jpg_100x100.jpg" alt="" class="header_user_avatar">
+                        <div class="header_user_menu inline_block">
+                            <div class="user_meta">
+                                <span class="name inline_block">qq_7fnnw8ldf79s5</span>
+                                <i class="icon_deltail inline_block"></i>
+                            </div>
+                            <ul class="ext_mode" id="menu_personal">
+                                <li class="s2"><a target="_blank" href="javascript:;">我的订单</a></li>
+                                <li class="s2"><a target="_blank" href="javascript:;">个人设置</a></li>
+                                <li class="s2"><a class="logout" href="javascript:;">退出</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -394,11 +409,11 @@
                 <div class="process_bar right">
                     <div class="md_process_sd"></div>
                     <i class="md_process_i1">1<span class="md_process_tip">购物车</span></i>
-                    <i class="md_process_i2">2<span class="md_process_tip">购物车</span></i>
-                    <i class="md_process_i3">3<span class="md_process_tip">购物车</span></i>
+                    <i class="md_process_i2">2<span class="md_process_tip">确认订单</span></i>
+                    <i class="md_process_i3">3<span class="md_process_tip">支付</span></i>
                     <i class="md_process_i4">
                         <img src="https://s10.mogucdn.com/mlcdn/c45406/171012_12eba941iia4fajf729ked218cd8k_23x23.png" alt="">
-                        <span class="md_process_tip">购物车</span>
+                        <span class="md_process_tip">完成</span>
                     </i>
                 </div>
             </div>
@@ -408,38 +423,88 @@
                 <!-- 不为空的情况 -->
                 <div class="cart_page_wrap">
                     <ul class="cart_slide clearfix">
-                        <li><a class="cart_slide_item_cur  " target="_blank" href="javascript:;">全部商品<span class="num">2</span></a></li>
-                        <li><a class="" target="_blank" href="javascript:;">优惠<span class="num">2</span></a></li>
-                        <li><a class="" target="_blank" href="javascript:;">库存紧张<span class="num">0</span></a></li>
+                        <li class="left"><a class="cart_slide_item_cur" href="javascript:;">全部商品<span class="num">1</span></a></li>
+                        <li class="left"><a class="" href="javascript:;">优惠<span class="num">1</span></a></li>
+                        <li class="left"><a class="" href="javascript:;">库存紧张<span class="num">0</span></a></li>
                     </ul>
                     <!--购物车--->
                     <section class="cart_table">
                         <!-- 头部 -->
                         <div class="new_cart_head">
                             <ul>
-                                <li class="new_cart_head_all">
-                                    <input class="s_all" id="s_all_h" name="s_all" type="checkbox">
+                                <li class="new_cart_head_all left">
+                                    <input class="s_all tr_checkmr" id="s_all_h" name="s_all" type="checkbox" checked>
                                     <label for="s_all_h">全选</label>
                                 </li>
-                                <li class="new_cart_head_info">商品信息</li>
-                                <li class="new_cart_head_price">单价(元)</li>
-                                <li class="new_cart_head_num">数量</li>
-                                <li class="new_cart_head_total">小计(元)</li>
-                                <li class="new_cart_head_edit">操作</li>
+                                <li class="new_cart_head_info left">商品信息</li>
+                                <li class="new_cart_head_price left">单价(元)</li>
+                                <li class="new_cart_head_num left">数量</li>
+                                <li class="new_cart_head_total left">小计(元)</li>
+                                <li class="new_cart_head_edit left">操作</li>
                             </ul>
                         </div>
                         <div class="new_cart_conent">
                             <!-- 店铺的头部信息，店铺名，联系客服，领取等操作 -->
-                            <div class="new_cart_conent_shop">
-                                <input class="s_shopall" name="live_" type="checkbox">
+                            <!-- <div class="new_cart_conent_shop">
+                                <input class="s_shopall tr_checkmr " name="live_" type="checkbox" checked>
                                 <a class="cart_hoverline" href="javascript:;">男装先生的小店</a>
                                 <a class="cart_im_btn" href="javascript:;">联系客服</a>
+                            </div> -->
+                            <!-- 购物车列表中商品信息 -->
+                            <div class="new_cart_conent_item clearfix" style="display: none;">
+                                <ul>
+                                    <li class="vm left">
+                                        <input class="item_check " type="checkbox" name="" checked>
+                                    </li>
+                                    <li class="desc left clearfix">
+                                        <a class="cart_goods_img _block left" href="javascript:;"><img class="cartImgTip pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/180422_6adcaj6jf26g1dck218bib32d4l9f_800x800.jpg_100x100.jpg" alt=""><img class="pintuanImgTip" src="" alt=""></a>
+                                        <!-- 商品title -->
+                                        <a class="cart_goods_t _block" href="javascripr:;" title="春秋男士休闲裤男弹力韩版修身男裤子潮夏季薄款青少年运动裤大码">
+                                            <em>98元任选2件</em>&nbsp;春秋男士休闲裤男弹力韩版修身男裤子潮夏季薄款青少年运动裤大码
+                                        </a>
+                                        <!-- 降价信息 -->
+                                        <p class="remind_btm"></p>
+                                    </li>
+                                    <li class="sku left">
+                                        <p class="cart_lh20">颜色：<b>y188</b></p>
+                                        <p class="cart_lh20">尺码：<b>L</b></p>
+                                    </li>
+                                    <!-- 单价 -->
+                                    <li class="price left">
+                                        <p class="cart_lightgray">85.00</p>
+                                        <p class="cart_data_sprice"> 59.50</p>
+                                        <p><span class="cart_tip_focuswidth inline_block">商家让利</span></p>
+                                    </li>
+                                    <!-- 数量 -->
+                                    <li class="num left">
+                                        <div class="cart_num">
+                                            <input class="cart_num_input " type="text" maxlength="3" value="7">
+                                            <span class="cart_num_reduce"></span>
+                                            <span class="cart_num_add"></span>
+                                        </div>
+                                    </li>
+                                    <!-- 小计 -->
+                                    <li class="total left">
+                                        <p class="item_sum">416.50</p>
+                                    </li>
+                                    <li class="edit left"><a class="delete" href="javascript:;">删除</a></li>
+                                </ul>
                             </div>
-                            <div class="new_cart_conent_item"></div>
                         </div>
-                        <div class="J_mundo"></div>
+                        <div class="J_mundo">成功删除<span class="J_num">1</span>件商品，如有误，可<a class="J_undo" href="javascript:;">撤销本次删除</a></div>
                     </section>
-                    <div class="cart_paybar"></div>
+                    <div class="cart_paybar clearfix" id="cartPaybar">
+                        <a class="cart_paybtn right _block" href="javascript:;">去付款</a>
+                        <div class="cart_paybar_info_cost right inline_block">¥ 0.00</div>
+                        <div class="cart_paybar_info right">共有 <span class="goodsNum">0</span> 件商品，总计： </div>
+                        <div class="cart_paybar_vmbox">
+                            <input class="s_all s_all_slave " type="checkbox" name="s_all" id="s_all_f" checked>
+                            <label for="s_all_f">全选</label>
+                            <a class="cart_hoverline" href="javascript:;" id="cartRemoveChecked">删除</a>
+                            <a class="cart_hoverline" href="javascript:;" id="cartRemoveUnuse">清空售罄商品</a>
+                            <a class="cart_hoverline" href="javascript:;" id="cartRemoveToCollect">移入收藏夹</a>
+                        </div>
+                    </div>
                 </div>
                 <!-- 为空的情况 -->
                 <div class="cart_empty_page">

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录</title>
     <link rel="stylesheet" href="../css/login.css">
-    <!-- <script src="../script/require.js" defer async="true" data-main="../script/main.js" id="currentpage" targetpage="loginmodule" charset="utf8"></script> -->
+    <script src="../script/require.js" defer async="true" data-main="../script/main.js" id="currentpage" targetpage="loginmodule" charset="utf8"></script>
 </head>
 
 <body>
@@ -34,6 +34,7 @@
                         </div>
                         <div class="phone_login left">
                             <a class="eb_mod " href="javascript:;">手机号登录</a>
+                            <a class="hidden eb_mod_account  tab_on" href="javascript:;">账号密码登录</a>
                         </div>
                     </div>
                     <div class="qrcode_wrapper">
@@ -46,7 +47,7 @@
                     <div class="formbox">
                         <p class="error_tip">登录名或密码错误</p>
                         <div class="lg_form">
-                            <form action="" method="POST">
+                            <form action="javascript:;" method="POST">
                                 <!-- 正常登录 start -->
                                 <div class="lo_mod_box hidden">
                                     <div class="item lg_name mb">
@@ -56,7 +57,7 @@
                                         <input class="ui_input" type="password" name="pass" placeholder="请输入密码">
                                     </div>
                                 </div>
-                                <!-- 无密码 start -->
+                                <!-- 无密码 手机号 start -->
                                 <div class="eb_mod_box">
                                     <div class="item mb">
                                         <select class="country_select"></select>
@@ -67,12 +68,14 @@
                                         <input class="ui_input" type="text" name="telcode" placeholder="验证码">
                                     </div>
                                 </div>
+                                <!-- 登录按钮 -->
                                 <div class="lg_login clearfix">
                                     <input class="sub" type="submit" value="登录">
                                 </div>
                                 <div class="lg_reg hidden">忘记密码</div>
                                 <div class="switch_account_login">账号密码登录</div>
                                 <div class="switch_phone_login hidden">手机号登录</div>
+                                <div class="switch_registry hidden"><a href="registry.html">注册账号</a></div>
                             </form>
                         </div>
                     </div>

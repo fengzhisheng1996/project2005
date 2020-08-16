@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品详情页</title>
     <link rel="stylesheet" href="../css/detail.css">
+    <script src="../script/require.js" defer async="true" data-main="../script/main.js" id="currentpage" targetpage="detailmodule" charset="utf8"></script>
 </head>
 
 <body>
@@ -72,11 +73,11 @@
         <!-- 头部导航 -->
         <div class="header_top wrapper clearfix">
             <div class="right">
-                <a href="#" class="header_nav_home inline_block">
+                <a href="index.html" class="header_nav_home inline_block">
                     <i></i> 首页
                 </a>
                 |
-                <a href="#" class="header_nav_market inline_block">
+                <a href="index.html" class="header_nav_market inline_block">
                     <i></i> 商城
                 </a>
                 |
@@ -334,7 +335,7 @@
                     <a href="" class="header_fav_center left">
                         <i class="_block"></i> 收藏
                     </a>
-                    <a href="" class="header_cart_center left">
+                    <a href="cart_list.html" target="_blank" class="header_cart_center left">
                         <i class="_block"></i> 购物车
                     </a>
                     <div class="header_download_center inline_block left">
@@ -344,20 +345,26 @@
                         </div>
                     </div>
                     <div class="header_user_info inline_block right">
-                        <a href="javascript:;" class="header_login">
+                        <a href="login.html" class="header_login">
                             <img src="../img/181016_143l3ehl4ebad6c2326gjk6d4h41g_48x48.png" alt=""> 登录
                         </a>
                     </div>
+                    <div class="header_user_info_login inline_block right">
+                        <img src="https://s5.mogucdn.com/p2/170119/upload_7817i12j1g5a4ebbldb6b346hj464_100x100.jpg_100x100.jpg" alt="" class="header_user_avatar">
+                        <div class="header_user_menu inline_block">
+                            <div class="user_meta">
+                                <span class="name inline_block">qq_7fnnw8ldf79s5</span>
+                                <i class="icon_deltail inline_block"></i>
+                            </div>
+                            <ul class="ext_mode" id="menu_personal">
+                                <li class="s2"><a target="_blank" href="javascript:;">我的订单</a></li>
+                                <li class="s2"><a target="_blank" href="javascript:;">个人设置</a></li>
+                                <li class="s2"><a class="logout" href="javascript:;">退出</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- <div class="box">
-                <a href="login.html">登录</a>
-                <a href="registry.html">注册</a>
-            </div>
-            <div class="login_top">
-                <span>lis</span>欢迎登录！
-                <a href="javascrapt:;">退出</a>
-            </div> -->
         </div>
     </div>
     <!-- 主体 -->
@@ -401,7 +408,7 @@
                         <!-- 大图区域 -->
                         <div class="big_img">
                             <button class="middle">
-                                <img src="https://s5.mogucdn.com/mlcdn/c45406/190810_5e50bjidcjacj6246ff1398bi8262_800x800.jpg_468x468.jpg" alt="帆布鞋女鞋超火小白鞋学生韩版板鞋百搭白色布鞋小黑鞋子">
+                                <img class="lazy" src="https://s5.mogucdn.com/mlcdn/c45406/190810_5e50bjidcjacj6246ff1398bi8262_800x800.jpg_468x468.jpg" alt="帆布鞋女鞋超火小白鞋学生韩版板鞋百搭白色布鞋小黑鞋子">
                             </button>
                         </div>
                         <!-- 小图区域 -->
@@ -520,13 +527,13 @@
                                                 <span class="num_add left"></span>
                                             </div>
                                             <!-- 库存总数 -->
-                                            <div class="goods_stock left">库存891件</div>
+                                            <div class="goods_stock left">库存<b>891</b>件</div>
                                             <!-- 库存提醒 -->
                                             <div class="goods_stock_tip left">您所填写的商品数量超过库存！</div>
                                         </dd>
                                     </dl>
                                 </div>
-                                <div class="pannel_action"><a class="pannel_ok" href="">确认</a></div>
+                                <div class="pannel_action"><a class="_block pannel_ok" href="javascript:;">确认</a></div>
                             </div>
                             <!-- 下单、加购-->
                             <div class="goods_buy">
@@ -535,6 +542,11 @@
                                 <!-- 加入购物车 -->
                                 <a class="buy_cart" href="javascript:;">加入购物车</a>
                                 <img class="refresh_loading" src="https://s10.mogucdn.com/mlcdn/c45406/171130_19haaka7jg7224f491f44c24c8bi5_32x32.gif" alt="">
+                            </div>
+                            <div class="module_cart_box">
+                                <span class="close_btn"></span>
+                                <p><span class="inline_block">已将商品添加到购物车</span></p>
+                                <p><a class="inline_block" target="_blank" href="cart_list.html">去购物车结算</a></p>
                             </div>
                         </div>
                         <!-- 社会化-->
@@ -742,43 +754,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="box clearfix">
-        <div class="cart_box clearfix">
-            <a href="cart_list.html">进入购物车</a>
-        </div>
-        <div class="wrap clearfix">
-            <div id="xpic">
-                <img src="" alt="" id="xt">
-                <div id="xf"></div>
-            </div>
-            <div id="df">
-                <img src="" alt="" id="dt">
-            </div>
-            <div id="ulist" class="clearfix">
-                <a href="javascript:;" class="left">&lt;</a>
-                <div id="list">
-                    <ul class="clearfix"></ul>
-                </div>
-                <a href="javascript:;" class="right">&gt;</a>
-            </div>
-        </div>
-        <div class="goodsinfo">
-            <div class="p_title">
-                <a href="javascript:;"></a>
-            </div>
-            <div class="p_pice">
-                <em>￥</em>
-                <i></i>
-            </div>
-            <div class="p_btn clearfix">
-                <input type="text" id="cout" value="1">
-                <a href="javascrapt:;">加入购物车</a>
-            </div>
-        </div>
-    </div>
-    <script src="../script/js/public.js"></script>
-    <script src="../script/js/ajax.js"></script>
-    <script src="../script/js/detail.js"></script> -->
+
 </body>
 
 </html>

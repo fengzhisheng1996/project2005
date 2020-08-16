@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品列表页</title>
     <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/pagination.css">
+    <script src="../script/require.js" defer async="true" data-main="../script/main.js" id="currentpage" targetpage="listmodule" charset="utf8"></script>
 </head>
 
 <body>
@@ -72,11 +74,11 @@
         <!-- 头部导航 -->
         <div class="header_top wrapper clearfix">
             <div class="right">
-                <a href="#" class="header_nav_home inline_block">
+                <a href="index.html" class="header_nav_home inline_block">
                     <i></i> 首页
                 </a>
                 |
-                <a href="#" class="header_nav_market inline_block">
+                <a href="index.html" class="header_nav_market inline_block">
                     <i></i> 商城
                 </a>
                 |
@@ -443,9 +445,23 @@
                         </div>
                     </div>
                     <div class="header_user_info inline_block right">
-                        <a href="javascript:;" class="header_login">
+                        <a href="login.html" class="header_login">
                             <img src="../img/181016_143l3ehl4ebad6c2326gjk6d4h41g_48x48.png" alt=""> 登录
                         </a>
+                    </div>
+                    <div class="header_user_info_login inline_block right">
+                        <img src="https://s5.mogucdn.com/p2/170119/upload_7817i12j1g5a4ebbldb6b346hj464_100x100.jpg_100x100.jpg" alt="" class="header_user_avatar">
+                        <div class="header_user_menu inline_block">
+                            <div class="user_meta">
+                                <span class="name inline_block">qq_7fnnw8ldf79s5</span>
+                                <i class="icon_deltail inline_block"></i>
+                            </div>
+                            <ul class="ext_mode" id="menu_personal">
+                                <li class="s2"><a target="_blank" href="javascript:;">我的订单</a></li>
+                                <li class="s2"><a target="_blank" href="javascript:;">个人设置</a></li>
+                                <li class="s2"><a class="logout" href="javascript:;">退出</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -467,15 +483,15 @@
             <div id="condition_box">
                 <div class="sp_top_nav">
                     <ul class="nav_list">
-                        <li class="on"><a href="javascript:;">上衣</a></li>
-                        <li><a href="javascript:;">裙子</a></li>
-                        <li><a href="javascript:;">裤子</a></li>
-                        <li><a href="javascript:;">内衣</a></li>
-                        <li><a href="javascript:;">鞋子</a></li>
-                        <li><a href="javascript:;">包包</a></li>
-                        <li><a href="javascript:;">男友</a></li>
-                        <li><a href="javascript:;">母婴</a></li>
-                        <li><a href="javascript:;">家居</a></li>
+                        <li class="on"><a href="list.html" target="_blank">上衣</a></li>
+                        <li><a href="list.html" target="_blank">裙子</a></li>
+                        <li><a href="list.html" target="_blank">裤子</a></li>
+                        <li><a href="list.html" target="_blank">内衣</a></li>
+                        <li><a href="list.html" target="_blank">鞋子</a></li>
+                        <li><a href="list.html" target="_blank">包包</a></li>
+                        <li><a href="list.html" target="_blank">男友</a></li>
+                        <li><a href="list.html" target="_blank">母婴</a></li>
+                        <li><a href="list.html" target="_blank">家居</a></li>
                     </ul>
                 </div>
             </div>
@@ -485,6 +501,8 @@
                     <a class="item_on" href="javascript:;"><span>综合</span></a>
                     <a class="" href="javascript:;"><span>销量</span></a>
                     <a class="" href="javascript:;"><span>新品</span></a>
+                    <a class="" href="javascript:;"><span>价格</span></a>
+                    <a class="" href="javascript:;"><span>价格</span></a>
                 </div>
                 <div class="price_input left clearfix">
                     <div class="txt left clearfix">
@@ -507,230 +525,10 @@
             <!-- 图墙list部分 -->
             <div class="wall_goods_box">
                 <div class="goods_list_mod">
-                    <div class="goods_item">
-                        <a class="likeLink " href="javascript:;" target="_blank">找相似</a>
-                        <a class="pagani_log_link" href="javascript:;" target="_blank"><img class="pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/190906_0f0g68cik95aeb2l0g45f9jc815gd_640x960.jpg_440x587.v1cAC.40.webp" alt=""></a>
-                        <a class="goods_info_container" href="javascript:;" target="_blank">
-                            <p class="title">闪闪高跟鞋女2020新款欧美尖头金属头粗跟高跟鞋百搭单鞋婚鞋</p>
-                            <div class="goods_info clearfix">
-                                <b class="price_info left">¥69.9</b>
-                                <p class="org_price left">¥<del>138</del></p>
-                                <span class="fav_num right">
-                                    <img src="https://s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="">
-                                    599
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="goods_item">
-                        <a class="likeLink " href="javascript:;" target="_blank">找相似</a>
-                        <a class="pagani_log_link" href="javascript:;" target="_blank"><img class="pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/191216_5e05535b1jg5a873ci73h7220d0j5_1000x1500.jpg_440x587.v1cAC.40.webp" alt=""></a>
-                        <a class="goods_info_container" href="javascript:;" target="_blank">
-                            <p class="title">包包女包网红新款韩版简约时尚锁扣斜挎风琴包复古百搭单肩小方包</p>
-                            <div class="goods_info">
-                                <b class="price_info left">¥55</b>
-                                <p class="org_price left">¥<del>79</del></p>
-                                <span class="fav_num right">
-                                    <img src="https://s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="">
-                                    357
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="goods_item">
-                        <a class="likeLink " href="javascript:;" target="_blank">找相似</a>
-                        <a class="pagani_log_link" href="javascript:;" target="_blank"><img class="pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/200222_1k76ff32b6ad2d50b97fcad9l2ie7_640x960.jpg_440x587.v1cAC.40.webp" alt=""></a>
-                        <a class="goods_info_container" href="javascript:;" target="_blank">
-                            <p class="title">孕妇套装休闲中长款背带裙短袖上衣夏装时尚连衣裙孕妇裙子两件套</p>
-                            <div class="goods_info">
-                                <b class="price_info left">¥109.2</b>
-                                <p class="org_price left">¥<del>156</del></p>
-                                <span class="fav_num right">
-                                    <img src="https://s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="">
-                                    83
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="goods_item">
-                        <a class="likeLink " href="javascript:;" target="_blank">找相似</a>
-                        <a class="pagani_log_link" href="javascript:;" target="_blank"><img class="pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/190906_0f0g68cik95aeb2l0g45f9jc815gd_640x960.jpg_440x587.v1cAC.40.webp" alt=""></a>
-                        <a class="goods_info_container" href="javascript:;" target="_blank">
-                            <p class="title">闪闪高跟鞋女2020新款欧美尖头金属头粗跟高跟鞋百搭单鞋婚鞋</p>
-                            <div class="goods_info">
-                                <b class="price_info left">¥69.9</b>
-                                <p class="org_price left">¥<del>138</del></p>
-                                <span class="fav_num right">
-                                    <img src="https://s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="">
-                                    599
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="goods_item">
-                        <a class="likeLink " href="javascript:;" target="_blank">找相似</a>
-                        <a class="pagani_log_link" href="javascript:;" target="_blank"><img class="pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/191216_5e05535b1jg5a873ci73h7220d0j5_1000x1500.jpg_440x587.v1cAC.40.webp" alt=""></a>
-                        <a class="goods_info_container" href="javascript:;" target="_blank">
-                            <p class="title">包包女包网红新款韩版简约时尚锁扣斜挎风琴包复古百搭单肩小方包</p>
-                            <div class="goods_info">
-                                <b class="price_info left">¥55</b>
-                                <p class="org_price left">¥<del>79</del></p>
-                                <span class="fav_num right">
-                                    <img src="https://s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="">
-                                    357
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="goods_item">
-                        <a class="likeLink " href="javascript:;" target="_blank">找相似</a>
-                        <a class="pagani_log_link" href="javascript:;" target="_blank"><img class="pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/200222_1k76ff32b6ad2d50b97fcad9l2ie7_640x960.jpg_440x587.v1cAC.40.webp" alt=""></a>
-                        <a class="goods_info_container" href="javascript:;" target="_blank">
-                            <p class="title">孕妇套装休闲中长款背带裙短袖上衣夏装时尚连衣裙孕妇裙子两件套</p>
-                            <div class="goods_info">
-                                <b class="price_info left">¥109.2</b>
-                                <p class="org_price left">¥<del>156</del></p>
-                                <span class="fav_num right">
-                                    <img src="https://s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="">
-                                    83
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="goods_item">
-                        <a class="likeLink " href="javascript:;" target="_blank">找相似</a>
-                        <a class="pagani_log_link" href="javascript:;" target="_blank"><img class="pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/190906_0f0g68cik95aeb2l0g45f9jc815gd_640x960.jpg_440x587.v1cAC.40.webp" alt=""></a>
-                        <a class="goods_info_container" href="javascript:;" target="_blank">
-                            <p class="title">闪闪高跟鞋女2020新款欧美尖头金属头粗跟高跟鞋百搭单鞋婚鞋</p>
-                            <div class="goods_info">
-                                <b class="price_info left">¥69.9</b>
-                                <p class="org_price left">¥<del>138</del></p>
-                                <span class="fav_num right">
-                                    <img src="https://s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="">
-                                    599
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="goods_item">
-                        <a class="likeLink " href="javascript:;" target="_blank">找相似</a>
-                        <a class="pagani_log_link" href="javascript:;" target="_blank"><img class="pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/191216_5e05535b1jg5a873ci73h7220d0j5_1000x1500.jpg_440x587.v1cAC.40.webp" alt=""></a>
-                        <a class="goods_info_container" href="javascript:;" target="_blank">
-                            <p class="title">包包女包网红新款韩版简约时尚锁扣斜挎风琴包复古百搭单肩小方包</p>
-                            <div class="goods_info">
-                                <b class="price_info left">¥55</b>
-                                <p class="org_price left">¥<del>79</del></p>
-                                <span class="fav_num right">
-                                    <img src="https://s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="">
-                                    357
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="goods_item">
-                        <a class="likeLink " href="javascript:;" target="_blank">找相似</a>
-                        <a class="pagani_log_link" href="javascript:;" target="_blank"><img class="pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/200222_1k76ff32b6ad2d50b97fcad9l2ie7_640x960.jpg_440x587.v1cAC.40.webp" alt=""></a>
-                        <a class="goods_info_container" href="javascript:;" target="_blank">
-                            <p class="title">孕妇套装休闲中长款背带裙短袖上衣夏装时尚连衣裙孕妇裙子两件套</p>
-                            <div class="goods_info">
-                                <b class="price_info left">¥109.2</b>
-                                <p class="org_price left">¥<del>156</del></p>
-                                <span class="fav_num right">
-                                    <img src="https://s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="">
-                                    83
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="goods_item">
-                        <a class="likeLink " href="javascript:;" target="_blank">找相似</a>
-                        <a class="pagani_log_link" href="javascript:;" target="_blank"><img class="pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/190906_0f0g68cik95aeb2l0g45f9jc815gd_640x960.jpg_440x587.v1cAC.40.webp" alt=""></a>
-                        <a class="goods_info_container" href="javascript:;" target="_blank">
-                            <p class="title">闪闪高跟鞋女2020新款欧美尖头金属头粗跟高跟鞋百搭单鞋婚鞋</p>
-                            <div class="goods_info">
-                                <b class="price_info left">¥69.9</b>
-                                <p class="org_price left">¥<del>138</del></p>
-                                <span class="fav_num right">
-                                    <img src="https://s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="">
-                                    599
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="goods_item">
-                        <a class="likeLink " href="javascript:;" target="_blank">找相似</a>
-                        <a class="pagani_log_link" href="javascript:;" target="_blank"><img class="pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/191216_5e05535b1jg5a873ci73h7220d0j5_1000x1500.jpg_440x587.v1cAC.40.webp" alt=""></a>
-                        <a class="goods_info_container" href="javascript:;" target="_blank">
-                            <p class="title">包包女包网红新款韩版简约时尚锁扣斜挎风琴包复古百搭单肩小方包</p>
-                            <div class="goods_info">
-                                <b class="price_info left">¥55</b>
-                                <p class="org_price left">¥<del>79</del></p>
-                                <span class="fav_num right">
-                                    <img src="https://s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="">
-                                    357
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="goods_item">
-                        <a class="likeLink " href="javascript:;" target="_blank">找相似</a>
-                        <a class="pagani_log_link" href="javascript:;" target="_blank"><img class="pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/200222_1k76ff32b6ad2d50b97fcad9l2ie7_640x960.jpg_440x587.v1cAC.40.webp" alt=""></a>
-                        <a class="goods_info_container" href="javascript:;" target="_blank">
-                            <p class="title">孕妇套装休闲中长款背带裙短袖上衣夏装时尚连衣裙孕妇裙子两件套</p>
-                            <div class="goods_info">
-                                <b class="price_info left">¥109.2</b>
-                                <p class="org_price left">¥<del>156</del></p>
-                                <span class="fav_num right">
-                                    <img src="https://s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="">
-                                    83
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="goods_item">
-                        <a class="likeLink " href="javascript:;" target="_blank">找相似</a>
-                        <a class="pagani_log_link" href="javascript:;" target="_blank"><img class="pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/190906_0f0g68cik95aeb2l0g45f9jc815gd_640x960.jpg_440x587.v1cAC.40.webp" alt=""></a>
-                        <a class="goods_info_container" href="javascript:;" target="_blank">
-                            <p class="title">闪闪高跟鞋女2020新款欧美尖头金属头粗跟高跟鞋百搭单鞋婚鞋</p>
-                            <div class="goods_info">
-                                <b class="price_info left">¥69.9</b>
-                                <p class="org_price left">¥<del>138</del></p>
-                                <span class="fav_num right">
-                                    <img src="https://s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="">
-                                    599
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="goods_item">
-                        <a class="likeLink " href="javascript:;" target="_blank">找相似</a>
-                        <a class="pagani_log_link" href="javascript:;" target="_blank"><img class="pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/191216_5e05535b1jg5a873ci73h7220d0j5_1000x1500.jpg_440x587.v1cAC.40.webp" alt=""></a>
-                        <a class="goods_info_container" href="javascript:;" target="_blank">
-                            <p class="title">包包女包网红新款韩版简约时尚锁扣斜挎风琴包复古百搭单肩小方包</p>
-                            <div class="goods_info">
-                                <b class="price_info left">¥55</b>
-                                <p class="org_price left">¥<del>79</del></p>
-                                <span class="fav_num right">
-                                    <img src="https://s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="">
-                                    357
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="goods_item">
-                        <a class="likeLink " href="javascript:;" target="_blank">找相似</a>
-                        <a class="pagani_log_link" href="javascript:;" target="_blank"><img class="pic_css1" src="https://s5.mogucdn.com/mlcdn/c45406/200222_1k76ff32b6ad2d50b97fcad9l2ie7_640x960.jpg_440x587.v1cAC.40.webp" alt=""></a>
-                        <a class="goods_info_container" href="javascript:;" target="_blank">
-                            <p class="title">孕妇套装休闲中长款背带裙短袖上衣夏装时尚连衣裙孕妇裙子两件套</p>
-                            <div class="goods_info">
-                                <b class="price_info left">¥109.2</b>
-                                <p class="org_price left">¥<del>156</del></p>
-                                <span class="fav_num right">
-                                    <img src="https://s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png" alt="">
-                                    83
-                                </span>
-                            </div>
-                        </a>
+                </div>
+                <!-- 分页的结构：分页插件 -->
+                <div class="pagelist">
+                    <div class="m-style page">
                     </div>
                 </div>
             </div>

@@ -54,7 +54,9 @@ $line_height1:24px;
             text-align: center;
             line-height: 20px;
             font-size: 18px;
-            color: #333;
+        }
+        a:hover {
+            color: #FF4466;
         }
         .indexmainLink_last {
             border-right: 0px;
@@ -80,8 +82,8 @@ $line_height1:24px;
         width: 256px;
         height: 440px;
         background-color: rgba(255, 255, 255, 0.8);
-        z-index: 100;
         position: relative;
+        z-index: 10;
         .nav_list {
             margin-top: 4px;
         }
@@ -332,11 +334,11 @@ $line_height1:24px;
         .mslide_banner {
             // display: none;
             width: 100%;
+            padding: 0px 8px !important;
             position: absolute;
             top: 0;
             left: 0;
             z-index: 0;
-            padding: 0px 8px !important;
         }
         dl {
             width: 190px;
@@ -470,8 +472,8 @@ $line_height1:24px;
             left: 0;
         }
         .mslide_banner {
+            width: 100%;
             padding: 0px;
-            z-index: 0;
             .mslide_banner_item {
                 width: 230px;
                 height: 408px;
