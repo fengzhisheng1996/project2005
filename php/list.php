@@ -1,6 +1,9 @@
 <?php
+header('Access-Control-Allow-Origin:*');
+header('Access-Control-Allow-Method:POST,GET');
 
 require 'conn.php'; //连接数据库
+
 
 $pagesize = 15; //声明一个变量，单个页面展示的数据条数。
 

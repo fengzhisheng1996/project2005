@@ -1,5 +1,7 @@
 <?php
 
+header('Access-Control-Allow-Origin:*');
+header('Access-Control-Allow-Method:POST,GET');
 require 'conn.php'; //连接数据库
 
 $sid = $_POST['sid'];
